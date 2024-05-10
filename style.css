@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background: #6C63FF;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.5s;
+}
+
+body.dark {
+    background: #272727;
+}
+
+.container-todolist {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    min-height: 471px;
+    min-width: 379px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5)
+}
+
+.container-todolist.dark {
+    background-color: #3f3f3f;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7)
+}
+
+.container-input {
+    margin: 33px 16px 0px 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.trilho {
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #6C63FF;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.trilho .indicador {
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+    margin: 4px;
+    background-color: #3f3f3f;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+.trilho.dark .indicador{
+    left: 22px;
+    background-color: #fff;
+}
+
+.container-input input {
+    background-color: #D9D9D9;
+    height: 44px;
+    width: 380px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-input input::placeholder {
+    text-align: center;
+}
+
+.container-input button {
+    background-color: #6C63FF;
+    height: 44px;
+    width: 44px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-input button:hover {
+    background-color: #3c3797;
+}
+
+.material-symbols-outlined {
+    color: #fff;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 16px 10px 16px;
+    gap: 10px;
+}
+
+.list li {
+    list-style: none;
+}
+
+.task-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-task {
+    height: 16px;
+    width: 16px;
+}
+
+.task {
+    background-color: #D9D9D9;
+    min-height: 44px;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.btn-clear, .btn-edit {
+    background-color: #6C63FF;
+    height: 44px;
+    width: 44px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
